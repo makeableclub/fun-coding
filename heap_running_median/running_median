@@ -1,0 +1,16 @@
+https://www.hackerrank.com/challenges/ctci-find-the-running-median/problem
+
+The median of a dataset of integers is the midpoint value of the dataset for which an equal number of integers are less than and greater than the value. To find the median, you must first sort your dataset of integers in non-decreasing order, then:
+
+If your dataset contains an odd number of elements, the median is the middle element of the sorted sample. If your dataset contains an even number of elements, the median is the average of the two middle elements of the sorted sample.
+
+
+https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/
+Methods:
+1. Insertion sort
+2. Augmented self balanced binary search tree
+    At every node of BST, maintain number of elements in the subtree rooted at that node. We can use a node as root of simple binary tree, whose left child is self balancing BST with elements less than root and right child is self balancing BST with elements greater than root. The root element always holds effective median.
+
+    If left and right subtrees contain same number of elements, root node holds average of left and right subtree root data. Otherwise, root contains same data as the root of subtree which is having more elements. After processing an incoming element, the left and right subtrees (BST) are differed utmost by 1.
+3. Heaps
+left max heap for number less than effective median, and right min heap for number larger than effective median

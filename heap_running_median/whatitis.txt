@@ -1,0 +1,6 @@
+https://www.hackerrank.com/topics/heaps
+
+A heap is just what it sounds like — a pile of values organized into a binary tree-like structure adhering to some ordering property. When we add elements to a heap, we fill this tree-like structure from left to right, level by level. This makes heaps really easy to implement in an array, where the value for some index 's left child is located at index  and the value for its right child is at index  (using zero-indexing). Here are the two most fundamental heap operations:
+
+add: Insert an element into the heap. You may also see this referred to as push.
+poll: Retrieve and remove the root element of the heap. You may also see this referred to as pop.

@@ -1,0 +1,11 @@
+/*
+ https://en.wikipedia.org/wiki/Clock_angle_problem
+ A method to solve such problems is to consider the rate of change of the angle in degrees per minute.
+ The hour hand of a normal 12-hour analogue clock turns 360° in 12 hours (720 minutes) or 0.5° per minute.
+ HOUR:  0.5 x (H x 60 + M)
+ The minute hand rotates through 360° in 60 minutes or 6° per minute.
+ MINUTE: 6 x M
+
+ When will HOUR / MINUTE superimposed?
+ 0.5 x (H x 60 + M) = 6 x M, where H = [0,11]
+*/
